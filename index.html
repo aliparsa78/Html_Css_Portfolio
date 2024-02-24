@@ -12,33 +12,30 @@
 
 <body>
     <!-- header section -->
-    <div class="header">
-        <nav class="nav">
-            <h2 class="logo">Portfo<span>lio</span> </h2>
+    <header>
+        <nav>
+         <ul class="sidebar">
+             <li onclick="closeSidebar()"><a href="#"><span class="fa fa-close"></span></a></li>
+             <li><a href="">Home</a></li>
+             <li><a href="">About</a></li>
+             <li><a href="">Contact</a></li>
+             <li><a href="">Experienece</a></li>
+             <li><a href="">Home</a></li>
+         </ul>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">My Experience</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Educations</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li class="logo"><a href="#">Port <span> Folio</span></a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#experience">Experienece</a></li>
+                <li class="hideOnMobile"><a href="#skill">Skills</a></li>
+                <li class="hideOnMobile"><a href="#education">Education</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li ><a onclick="showSidebar()" href="#"><span class="fa fa-bars"></span></a></li>
             </ul>
-            <a href="" class="btn">Subscribe</a>
-        </nav>
-        <div class="content">
-            <h4>Hello, my name is </h4>
-            <h1>Ali<span>Parsa</span> </h1>
-            <h3>I'm a web developer.</h3>
-            <div class="newslatter">
-                <form action="">
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <input type="submit" name="submit" value="Lets Start">
-                </form>
-            </div>
-        </div>
-    </div>
+           </nav>
+    </header>
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="main">
             <img src="./ali2.JPG" alt="">
             <div class="about-text">
@@ -58,7 +55,7 @@
     <!-- Service section start here  
         
     <!-- Experience Part start here -->
-    <section class="experience">
+    <section class="experience" id="experience">
         <div class="title">
             My Experience
         </div>
@@ -71,7 +68,7 @@
                 <div class="card-body">
                     <p>
                         <span class="fa fa-check"></span>Backend PHP developer <br> Kabul, Afghanistan <br>
-                          <span class="date">JAN 2021 – JUN 2021</span>
+                        <span class="date">JAN 2021 – JUN 2021</span>
                     </p>
                 </div>
             </div>
@@ -83,7 +80,7 @@
                 <div class="card-body">
                     <p>
                         <span class="fa fa-check"></span>Backend web developer <br> Kabul, Afghanistan <br>
-                          <span class="date">JUN 2021 – DES 2021</span>
+                        <span class="date">JUN 2021 – DES 2021</span>
                     </p>
                 </div>
             </div>
@@ -95,7 +92,7 @@
                 <div class="card-body">
                     <p>
                         <span class="fa fa-check"></span>Laravel Developer <br> Remote, Herat,Afghanistan<br>
-                          <span class="date">FEB 2022 – Nov 2023</span>
+                        <span class="date">FEB 2022 – Nov 2023</span>
                     </p>
                 </div>
             </div>
@@ -107,12 +104,12 @@
                 <div class="card-body">
                     <p>
                         <span class="fa fa-check"></span>Backend PHP & Laravle developer <br>
-                         Ghazni, Afghanistan <br>
-                          <span class="date">Nov 2023 – Now</span>
+                        Ghazni, Afghanistan <br>
+                        <span class="date">Nov 2023 – Now</span>
                     </p>
                 </div>
             </div>
-            
+
         </div>
 
 
@@ -120,7 +117,7 @@
     <!-- Experience Part End here -->
 
     <!-- Skills part start here -->
-    <section class="service">
+    <section class="service" id="skill">
         <div class="title">
             My Skills
         </div>
@@ -159,51 +156,51 @@
     </section>
     <!-- Skills part start here -->
 
-        <!-- Education part start here -->
-        <section class="service">
-            <div class="title">
-                Education
+    <!-- Education part start here -->
+    <section class="service" id="education">
+        <div class="title">
+            Education
+        </div>
+        <div class="ed-box">
+            <div class="educationCard">
+                <i class="fa fa-book"></i>
+                <h3> High School </h3>
+                <p>Sammar High School</p>
+                <p>Ghazni-Afghanistan</p>
+                <span class="ed-date">2007 - 2018</span>
             </div>
-            <div class="ed-box">
-                <div class="educationCard">
-                    <i class="fa fa-book"></i>
-                    <h3> High School </h3>
-                        <p>Sammar High School</p> 
-                        <p>Ghazni-Afghanistan</p>
-                        <span class="ed-date">2007 - 2018</span>                   
-                </div>
-                <div class="educationCard1">
-                    <i class="fa fa-user"></i><i class="fa fa-book"></i>
-                    <h3> Bachelor </h3>
-                    <p>Kabul University</p>
-                    <p>Kabul-Afghanistan</p>
-                    <span class="ed-date">2018-2022</span>
-                    
-                </div>
-                
-                <div class="educationCard2">
-                    <i class="fa fa-edit"></i>
-                    <h3> Language</h3>
-                    <p>Kateb English Department</p>
-                    <p>Kabul-Afghanistan</p>
-                    <span class="ed-date">2021-2022</span>
-                    
-                </div>
+            <div class="educationCard1">
+                <i class="fa fa-user"></i><i class="fa fa-book"></i>
+                <h3> Bachelor </h3>
+                <p>Kabul University</p>
+                <p>Kabul-Afghanistan</p>
+                <span class="ed-date">2018-2022</span>
+
             </div>
-        </section>
-        <!-- Education part start here -->
-   
+
+            <div class="educationCard2">
+                <i class="fa fa-edit"></i>
+                <h3> Language</h3>
+                <p>Kateb English Department</p>
+                <p>Kabul-Afghanistan</p>
+                <span class="ed-date">2021-2022</span>
+
+            </div>
+        </div>
+    </section>
+    <!-- Education part start here -->
+
 
     <!-- footer -->
-    <footer>
+    <footer id="contact">
         <p class="title">Ali Parsa</p>
         <p class="text">
             I would be appreciat, if you contact me !
         </p>
-        <h5> <span class="fa fa-home">  </span> Ghazni-Afghanistan </h5>
-        <h5> <span class="fa fa-envelope">  </span> aliparsa883@gmail.com </h5>
-        <h5> <span class="fa fa-phone">  </span> (+93) 76 494 1367</h5>
-        <h5> <span class="fa fa-git">  </span> aliparsa78</h5>
+        <h5> <span class="fa fa-home"> </span> Ghazni-Afghanistan </h5>
+        <h5> <span class="fa fa-envelope"> </span> aliparsa883@gmail.com </h5>
+        <h5> <span class="fa fa-phone"> </span> (+93) 76 494 1367</h5>
+        <h5> <span class="fa fa-git"> </span> aliparsa78</h5>
         <div class="social">
             <a href=""><i class="fa fa-facebook"></i></a>
             <a href=""><i class="fa fa-dribbble"></i></a>
@@ -214,3 +211,15 @@
 </body>
 
 </html>
+
+<script>
+    function showSidebar(){
+        var sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = "flex";
+        sidebar.style.transition = "0.5s";
+    }
+    function closeSidebar(){
+        var close = document.querySelector('.sidebar')
+        close.style.display="none"
+    }
+</script>

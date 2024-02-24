@@ -4,48 +4,71 @@
     font-family: 'josefin Sans' sans-serif;
     box-sizing: border-box;
 }
-.header{
-    height: 115vh;
-    width: 100%;
-    background-image: url('./ali3.jpg');
+body{
+    min-height: 100vh;
+}
+header{
+    background-image: url(Parsa.JPG);
     background-size: cover;
     background-position: center;
+    height: 90vh;
 }
-.nav{
+nav{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    padding: 15px 20px ;
+}
+nav a{
+    text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-    
+    color: white;
+    font-size: 20px;
+}
+nav a:hover{
+    color: #f9004d;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav li:last-child{
+    display: none;
 }
 .logo{
-    color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
+    font-size: 30px;
+    font-weight: 800;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
 }
 span{
     color: #f9004d;
 }
 
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 15px;
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-
-}
-nav ul li a:hover{
-    color: #f9004d;
-    transition: 0.5s    ;
-}
+ 
 .btn{
     background-color: #f9004d;
     color: white;
@@ -58,6 +81,7 @@ nav ul li a:hover{
 .btn:hover{
     transform: scale(1.2);
     transition: 0.4s;
+
 }
 
 .content{
@@ -296,17 +320,15 @@ p{
 
 
 /* For media query */
-@media screen and (max-width: 667px) {
-    .header{
-        height: 60vh;
-        width: 100%;
-        background-image: url('./Parsa.JPG');
-        background-size: cover;
-        background-position: center;
+@media screen and (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
     }
-    .nav{
-        display: none; 
+    nav li:last-child{
+        display: initial;
     }
+    
+
     .content{
         position: absolute;
         top: 50%;
@@ -389,6 +411,14 @@ p{
     
     
 }
+@media screen and (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+    nav li:last-child{
+        display: initial;
+    }
+}
 
 
 /* CONTACT */
@@ -425,7 +455,7 @@ p{
     transition: 0.4s;
 }
 /* Footer */
-footer{
+#contact{
     background-color: #858585;
     display: flex;
     flex-direction: column;
