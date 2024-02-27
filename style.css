@@ -6,64 +6,99 @@
 }
 body{
     min-height: 100vh;
+    background-color: rgb(250,250,250);;
 }
 header{
-    background-image: url(Parsa.JPG);
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+header .info{
+    padding: 90px 70px;
+    margin: 10px 100px;
+    width: 600px;
+}
+header .info h2{
+    padding: 10px 0px;
+    font-size: 28px;
+    text-align: start;
+}
+header .info h4{
+    font-size: 40px;
+}
+header .info p{
+    margin: 20px 0;
+    font-size: 18px;
+}
+header .image{
+    margin: 90px auto;
+}
+header .image img{
+    border-radius: 50%;
+
+}
+header .info form .data{
+    border: 1px solid #f9004d;
+    height: 45px ;
+    width: 380px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+header .info form input{
+    width: 63%;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    height: 23px;
+    border: none;
+    background-color: white;
+    margin-right: 20px;
+}
+
 nav{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
 nav ul{
     width: 100%;
     list-style: none;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
 }
 nav li{
-    padding: 15px 20px ;
+    padding: 0px 30px;
 }
 nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: white;
+    color: #000;
     font-size: 20px;
 }
 nav a:hover{
     color: #f9004d;
 }
-nav li:first-child{
-    margin-right: auto;
-}
-nav li:last-child{
+.close{
     display: none;
 }
+.bar{
+    display: none;
+}
+
 .logo{
     font-size: 30px;
     font-weight: 800;
+    padding: 0 30px;
 }
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.sidebar li{
-    width: 100%;
-}
+
 span{
     color: #f9004d;
 }
@@ -74,12 +109,12 @@ span{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 13px 40px;
     border-radius: 30px;
     border: 1px solid transparent;
 }
 .btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.4s;
 
 }
@@ -136,13 +171,13 @@ span{
 
 /* About part */
 .about{
-    background-color: #858585;
+    background-color: rgb(250,250,250);;
+
     width: 100%;
-    padding: 50px 0;
+    padding: 10px 0;
 }
 .main{
-    width: 1130px;
-    max-width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -151,7 +186,7 @@ span{
 }
 .about img{
     right: auto;
-    width: 350px;
+    width: 250px;
     border-radius: 13px;
 }
 .about-text{
@@ -159,19 +194,19 @@ span{
 }
 
 .about-text h2{
-    color: white;
+    color: #4b7832;
     font-size: 40px;
     margin-bottom: 30px;
 }
  h5{
-    color: white;
+    color: #6fa7c3;
     font-size: 22px;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
 .about-text p{
-    color: #fcfc;
+    color: #060721ba;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 28px;
@@ -184,23 +219,26 @@ span{
     padding: 10px 15px;
     border-radius: 30px;
     transition: .4s;
+    border: none;
 }
 .button:hover{
     background-color: transparent;
     cursor: pointer;
     border: 2px solid #f9004d;
     transition: 0.4s;
+    color: #191919;
 }
 
 /* Experience part */
 .service{
-    background-color: #858585;
+    background-color: rgb(250,250,250);;
+
     width: 100%;
     padding: 50px 0px;
 }
 
 .title{
-    color: white;
+    color: #71c36f;
     font-size: 40px;
     margin: 0px auto;
     padding: 20px 0;
@@ -213,7 +251,7 @@ span{
     min-height: 400px;
 }
 .card{
-    height: 385px;
+    
     width: 330px;
     padding: 20px 35px;
     text-align: center;
@@ -225,13 +263,13 @@ span{
 }
 .card i{
     font-size: 60px;
-    color: #f9004d;
+    color: yellow;
     margin-bottom: 15px;
 }
 
 .card p{
     color: #fcfc;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .card .button{
@@ -239,7 +277,12 @@ span{
 }
 
 .experience{
-    background-color: #858585;
+    background-color: rgb(250,250,250);
+    margin: 50px 0;
+
+}
+.experience .title{
+    color: #71c36f;
 }
 .experienceCard{
     height: 300px;
@@ -251,17 +294,18 @@ span{
     position: relative;
     overflow: hidden;
     margin: 0 10px;
-    box-shadow: 0 5px 10px 2px rgba(0, 0 , 0, 0.9);
+    box-shadow: 0 2px 4px 2px rgba(0, 0 , 0, 0.1);
 }
 .experienceCard i{
     font-size: 60px;
-    color: blueviolet;
+    color: green;
     padding: 10px 0;
 }
 h2{
     color: blue;
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
     
 }
 .experienceCard p{
@@ -319,107 +363,6 @@ p{
 }
 
 
-/* For media query */
-@media screen and (max-width: 800px) {
-    .hideOnMobile{
-        display: none;
-    }
-    nav li:last-child{
-        display: initial;
-    }
-    
-
-    .content{
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-100%);
-    }
-    .content h1{
-        font-size: 35px;
-        margin: 20px 40px 40px;
-    }
-    .content .newslatter form{
-        width: 300px;
-    }
-    /* About */
-    .main{
-        display: flex;
-        flex-direction: column;
-    }
-    .about img{
-        right: auto;
-        width: 300px;
-        border-radius: 13px;
-    }
-    .about-text{
-        width: 300px;
-    }
-    .about-text h2{
-        font-size: 36px;
-        text-align: center;
-        margin: 15px 0;
-    }
-    .about-text h5{
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    /* Experience */
-    .title{
-        font-size: 30px;
-    }
-    .experienceCard{        
-        margin: 10px 10px;
-    }
-    /* Card */
-    .service .box{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 10px auto;
-    }
-    .card{
-        height: 370px;
-        width: 300px;
-        padding: 10px 25px;
-        margin: 10px 10px;
-    }
-    .ed-box{
-        display: flex;
-        flex-direction: column;
-    }
-    .educationCard, .educationCard1, .educationCard2{
-        width: 300px ;
-        height: 300px;
-        margin: 10px 0 ;
-    }
-    .educationCard, .educationCard1, .educationCard2 i{
-        font-size: 60px;
-        color: blue;
-        padding: 10px 2px;
-    }
-    h3{
-        color: #f9004d;
-        font-size: 35px;
-        padding: 5px 0;
-    }
-    p{
-        font-size: 20px;
-        color: blue;
-        line-height: 30px;
-    }
-    
-    
-}
-@media screen and (max-width: 400px) {
-    .sidebar{
-        width: 100%;
-    }
-    nav li:last-child{
-        display: initial;
-    }
-}
-
 
 /* CONTACT */
 .contact{
@@ -456,7 +399,8 @@ p{
 }
 /* Footer */
 #contact{
-    background-color: #858585;
+    background-color: rgb(250,250,250);;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -464,17 +408,20 @@ p{
 }
 
 footer .title{
-    color: white;
+    color: blue;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 footer .text{
-    color: #fcfc;
+    color: #191919;
     word-spacing: 1px;
     margin-bottom: 20px;
     
+}
+footer .address{
+    margin: 10px auto;
 }
 .social{
     padding: 10px 0;
@@ -502,11 +449,306 @@ footer .text{
     transition: 0.4s;
 }
 .endp{
-    color: #f9004d;
+    color: #71c36f;
     margin-bottom: 20px;
     font-size: 17px;
 }
 .endp:hover{
     color: white;
     transition: .5s;
+}
+
+/* For media query */
+@media screen and (max-width: 768px) {
+    nav{
+        max-width: 100%;
+    }
+    .close{
+        display: initial;
+    }
+    .nav-main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        height: 60vh;
+        width: 300px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+    nav ul li{
+        padding: 17px 10px;
+        width: 100%;
+    }
+    nav ul li:hover{
+        background-color: #fcfcfc;
+    }
+    .bar{
+        display: inline-block;
+        padding: 0 50px;
+    }
+    
+    .hideOnMobile{
+        display: initial;
+    }
+    header {
+        height: 40vh;
+        width: 100%;
+        
+    }
+    header .info {
+        padding: 30px 10px;
+        margin: 10px 10px;
+        width: 50%;
+    }
+    header .info h2 {
+        font-size: 25px;
+    }
+    header .info h4 {
+        font-size: 30px;
+    }
+    header .image {
+        margin: 20px auto;
+        width: 40%;
+    }
+    header .image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* About part */
+    
+    .main{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .about .image{
+        right: 0%;
+        width: 30%;
+        border-radius: 13px;
+    }
+    .about img{
+        width: 100%;
+        height: 230px;
+        padding: 0 15px;
+    }
+    .about-text{
+        width: 50%;
+    }
+    .about-text p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+   
+     .button{
+        font-size: 20px;
+    }
+    /* Experience */
+    .experience .main{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .experienceCard {
+        margin: 10px 20px;
+    }
+    /* Skill */
+    .service .box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 400px;
+        flex-wrap: wrap;
+    }
+    .service .box .card {
+        margin: 10px 10px;
+        width: 280px;
+    }
+    /* Education */
+    .ed-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .educationCard, .educationCard1, .educationCard2 i {
+        padding: 0px 2px;
+        padding-top: 10px;
+    }
+    .educationCard, .educationCard1, .educationCard2 {
+        width: 280px;
+        height: 250px;
+        margin: 10px 15px;
+    }
+    p{
+        font-size: 19px;
+        color: #191919;
+    
+    }
+    
+}
+@media screen and (max-width: 480px) { 
+    header {
+        height: 50vh;
+        width: 100%;
+        
+    }
+    header .info {
+        padding: 30px 5px;
+        margin: 10px 5px;
+        width: 35%;
+    }
+    header .info h2 {
+        font-size: 20px;
+    }
+    header .info h4 {
+        font-size: 20px;
+    }
+    header .info p {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    header .info form .data {
+        width: 290px;
+    }
+    header .info form input {
+        width: 149px;
+    }
+    header .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* About part */
+    
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .image{
+        width: 80%;
+    }
+    .about img{
+        padding: 10px 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .about-text{
+        width: 90%;
+    }
+   
+    /* Experience */
+    .experience .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .experienceCard {
+        width: 260px;
+        padding: 10px 15px;
+        margin: 10px 5px;
+    }
+     /* Skill */
+     .service .box {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .service .box .card {
+        margin: 10px 5px;
+        width: 260px;
+    }
+    .card i {
+        font-size: 40px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .card p {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    /* Education */
+    .ed-box {
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .educationCard, .educationCard1, .educationCard2 {
+        width: 250px;
+    }
+    footer .text {
+        font-size: 17px;
+    }
+    .social {
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+}
+
+@media screen and (max-width: 360px) { 
+    header .image img {
+        width: 110px;
+        height: 110px;
+    }
+    header .info {
+        padding: 30px 0px 0 5px;
+        margin: 10px 0px 0 5px;
+        width: 40%;
+    }
+   
+    header .info h4 {
+        font-size: 16px;
+    }
+    header .info form .data {
+        width: 290px;
+    }
+    header .info form input {
+        width: 149px;
+    }
+
+    
+   
+    
+    
+   
+    
+    
+    
 }

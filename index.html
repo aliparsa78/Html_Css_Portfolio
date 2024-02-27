@@ -11,42 +11,55 @@
 </head>
 
 <body>
-    <!-- header section -->
+    <!-- Navbar section -->
+    <nav>
+        <div class="bar-info">
+            <a href="#" class="logo">Port <span> Folio</span></a>
+        </div>
+        <a onclick="showSidebar()" href="#" class="bar" id="bar"><span class="fa fa-bars"></span></a>
+        <ul class="navbar">
+            <li class="close"><a onclick="closeSidebar()" href="#"><span class="fa fa-close"></span></a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#experience">Experienece</a></li>
+            <li class="hideOnMobile"><a href="#skill">Skills</a></li>
+            <li class="hideOnMobile"><a href="#education">Education</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header -->
     <header>
-        <nav>
-         <ul class="sidebar">
-             <li onclick="closeSidebar()"><a href="#"><span class="fa fa-close"></span></a></li>
-             <li><a href="">Home</a></li>
-             <li><a href="">About</a></li>
-             <li><a href="">Contact</a></li>
-             <li><a href="">Experienece</a></li>
-             <li><a href="">Home</a></li>
-         </ul>
-            <ul>
-                <li class="logo"><a href="#">Port <span> Folio</span></a></li>
-                <li class="hideOnMobile"><a href="#">Home</a></li>
-                <li class="hideOnMobile"><a href="#about">About</a></li>
-                <li class="hideOnMobile"><a href="#experience">Experienece</a></li>
-                <li class="hideOnMobile"><a href="#skill">Skills</a></li>
-                <li class="hideOnMobile"><a href="#education">Education</a></li>
-                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-                <li ><a onclick="showSidebar()" href="#"><span class="fa fa-bars"></span></a></li>
-            </ul>
-           </nav>
+        <div class="info">
+            <h2>Ali Hussaini</h2>
+            <h4>I'm <span>Web Developer</span></h4>
+            <p>
+                Experienced web developer with highly motivated to create user fiendly websites.
+            </p>
+            <form action="" class="email">
+                <div class="data">
+                    <input type="text" placeholder="Enter your email...">
+                    <button class="btn">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="image">
+            <img src="image/IMG_8091(1).JPG" width="350px" height="350px">
+        </div>
     </header>
     <!-- About Section -->
     <section class="about" id="about">
+        <h2>About Me</h2>
         <div class="main">
-            <img src="./ali2.JPG" alt="">
+            <div class="image">
+                <img src="./ali2.JPG" alt="">
+            </div>
             <div class="about-text">
-                <h2>About Me</h2>
                 <h5>Developer & <span>Designer</span> </h5>
-                <p>I am a back-end web developer, i can provide you clean code and perfect develop.
-                    I also make the website more & more interactive.I am a back-end web developer, i can provide you
-                    clean code and perfect develop.
-                    I also make the website more & more interactive.I am a back-end web developer, i can provide you
-                    clean code and perfect develop.
-                    I also make the website more & more interactive.
+                <p>I am a back-end web developer. I can provide you clean code and perfect websites and Management Systems.
+                    I also make the website more & more creative and user friendly.I am a back-end web developer, 
+                    and it's almost 3 years that I am working with backend.
+                    Beside working with backend, I am trying to study front-end technologys as well.
+                    I am waiting for your contact, and will be appretiate your contacts.
                 </p>
                 <button class="button">Let's talk</button>
             </div>
@@ -123,30 +136,33 @@
         </div>
         <div class="box">
             <div class="card">
-                <i class="fa fa-bars"></i>
-                <h5>Web Development</h5>
-                <p>Every website should be built with two primary goals: Firstly, it needs
-                    to work across all over devices. secondly, it need to be fast as possible.
+                <i class="fa fa-tasks"></i>
+                <h5>PHP-Laravel</h5>
+                <p>
+                    Every website need to manage every parts of theirs. PHP language with it's frameword Laravel
+                    is the best technology to manage your performance of your website.
                 </p>
                 <p>
                     <a href="" class="button">Read More</a>
                 </p>
             </div>
             <div class="card">
-                <i class="fa fa-user"></i>
-                <h5>Web Development</h5>
-                <p>Every website should be built with two primary goals: Firstly, it needs
-                    to work across all over devices. secondly, it need to be fast as possible.
+                <i class="fa fa-database"></i>
+                <h5> Mysql Database </h5>
+                <p>
+                    Every systems and website that work interactive, need to have a database. Mysql is on of the 
+                    most popular database which work on your website as well as you want.
                 </p>
                 <p>
                     <a href="" class="button">Read More</a>
                 </p>
             </div>
             <div class="card">
-                <i class="fa fa-bell"></i>
-                <h5>Web Development</h5>
+                <i class="fa fa-key"></i>
+                <h5> Front-end Technologys </h5>
                 <p>Every website should be built with two primary goals: Firstly, it needs
                     to work across all over devices. secondly, it need to be fast as possible.
+                    for these reasons, we use technologys like: React, Javascript, Html,Css...
                 </p>
                 <p>
                     <a href="" class="button">Read More</a>
@@ -170,7 +186,7 @@
                 <span class="ed-date">2007 - 2018</span>
             </div>
             <div class="educationCard1">
-                <i class="fa fa-user"></i><i class="fa fa-book"></i>
+                <i class="fa fa-graduation-cap"></i>
                 <h3> Bachelor </h3>
                 <p>Kabul University</p>
                 <p>Kabul-Afghanistan</p>
@@ -197,16 +213,18 @@
         <p class="text">
             I would be appreciat, if you contact me !
         </p>
-        <h5> <span class="fa fa-home"> </span> Ghazni-Afghanistan </h5>
-        <h5> <span class="fa fa-envelope"> </span> aliparsa883@gmail.com </h5>
-        <h5> <span class="fa fa-phone"> </span> (+93) 76 494 1367</h5>
-        <h5> <span class="fa fa-git"> </span> aliparsa78</h5>
-        <div class="social">
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-dribbble"></i></a>
-            <a href=""><i class="fa fa-whatsapp"></i></a>
+        <div class="address">
+            <h5> <span class="fa fa-home"> </span> Ghazni-Afghanistan </h5>
+            <h5> <span class="fa fa-envelope"> </span> aliparsa883@gmail.com </h5>
+            <h5> <span class="fa fa-phone"> </span> (+93) 76 494 1467</h5>
+            <h5> <span class="fa fa-git"> </span> aliparsa78</h5>
+            <div class="social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-dribbble"></i></a>
+                <a href=""><i class="fa fa-whatsapp"></i></a>
+            </div>
         </div>
-        <p class="endp">CopyRight By Ali Parsa 2023</p>
+        <p class="endp">CopyRight By Ali Hussaini 2024</p>
     </footer>
 </body>
 
@@ -214,12 +232,19 @@
 
 <script>
     function showSidebar(){
-        var sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = "flex";
+        var sidebar = document.querySelector('.navbar')
+        sidebar.style.right = "0";
+        sidebar.style.position = "absolute";
         sidebar.style.transition = "0.5s";
+        var close = document.querySelector('.colse');
+        close.style.display="inline";
+        
+       
     }
     function closeSidebar(){
-        var close = document.querySelector('.sidebar')
-        close.style.display="none"
+        var close = document.querySelector('.navbar')
+        close.style.position="fixed"
+        close.style.right="-310px";
+        
     }
 </script>
