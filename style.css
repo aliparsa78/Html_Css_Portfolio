@@ -653,7 +653,6 @@ footer .address{
         justify-content: center;
     }
     .about .image{
-        width: 80%;
         text-align: center;
     }
     
@@ -661,7 +660,7 @@ footer .address{
         padding: 10px 10px;
         border-radius: 10px;
         margin-bottom: 20px;
-        width: 180px;
+        width: 170px;
         height: 150px;
         border-radius: 15px;
     }
