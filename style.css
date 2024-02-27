@@ -654,11 +654,16 @@ footer .address{
     }
     .about .image{
         width: 80%;
+        text-align: center;
     }
-    .about img{
+    
+    .about img {
         padding: 10px 10px;
         border-radius: 10px;
         margin-bottom: 20px;
+        width: 180px;
+        height: 150px;
+        border-radius: 15px;
     }
     .about-text{
         width: 90%;
